@@ -2,76 +2,100 @@
 
 ## Project Overview
 
-[cite_start]This project focuses on a comprehensive analysis and visualization of global population dynamics. [cite: 1] [cite_start]Using Power BI Desktop, the project explores population figures, projections, and related demographic indicators across various countries and time periods. [cite: 1] [cite_start]The analysis leverages three primary datasets: "Population Figures & Projections.csv", "Population Figures & Projections Metadata.xlsx", and "Country Groupings.xlsx". [cite: 8, 9, 10, 11]
+This project focuses on a comprehensive analysis and visualization of global population dynamics. Using Power BI Desktop, the project explores population figures, projections, and related demographic indicators across various countries and time periods. The analysis leverages three primary datasets: "Population Figures & Projections.csv", "Population Figures & Projections Metadata.xlsx", and "Country Groupings.xlsx".
 
 ## Key Analyses and Visualizations Performed
 
 ### Data Understanding and Initial Exploration:
-* [cite_start]**Population Figures & Projections.csv:** Contains data on population (male and female), population growth (annual %), rural and urban populations, life expectancy, birth rate, and death rate over time. [cite: 14, 15, 16, 17, 18, 19, 20]
-* [cite_start]**Population Figures & Projections Metadata.xlsx:** Provides descriptions, definitions, and units for the columns in the main population dataset. [cite: 22]
-* [cite_start]**Country Groupings.xlsx:** Offers a mapping of countries by regions and income groups, enabling comparative analysis across different economies. [cite: 24, 31, 32]
+* **Population Figures & Projections.csv:** This file contains information related to population over a time period, including Country Name, Country Code, Time, Time Code, Population male & female, Population growth (annual %), Rural and Urban population, life expectancy, birth rate, and death rate.
+* **Population Figures & Projections Metadata.xlsx:** This file includes descriptions, definitions, or units for the columns in the Population Figures & Projections dataset.
+* **Country Groupings.xlsx:** This file provides a mapping of countries in terms of regions and income groups.
 * **Notable Observations:**
-    * [cite_start]Detailed population figures, including male and female populations and annual growth rates, allow for identification of growth or decline trends for specific countries and regions. [cite: 27]
-    * [cite_start]Urban and rural population data can be used to determine urbanization patterns and shifts in population distribution over time. [cite: 28]
-    * [cite_start]Indicators like life expectancy, birth rate, and death rate provide insights into changes in quality of life across countries and regions. [cite: 29, 30]
+    * The data includes detailed information on population figures like male population and female population for each country over multiple years, plus there is also a growth matrix with the name of Population growth (annual%) which can be used to identify trends like periods of growth and decline for specific countries and regions.
+    * The dataset includes information on urban and rural population for each country which can be used to determine trends of shifting people from one place to another place globally or within a specific region over a period of time.
+    * The dataset includes columns like life expectancy at birth, birth rate, and death rate. These indicators provide information on how the quality of life changes across different countries and regions over a certain period.
+    * The “Country Grouping” file gives information for grouping countries across different regions, income levels, or other metrics, enabling comparative analysis across different groups of economies.
 
 ### Dashboard Objectives and Justification of Visualizations:
 
-[cite_start]The dashboard aims to visualize population trends, urbanization patterns, and health indicators with interactive capabilities. [cite: 34, 35, 36, 37, 38, 39]
+The dashboard aims to visualize population trends, urbanization patterns, and health indicators with interactive capabilities.
 
-1.  [cite_start]**Population Trend (Line and Stacked Column Chart):** [cite: 34, 41]
-    * [cite_start]**Purpose:** To highlight total, urban, and rural population differences over time for the top 5 most populated countries. [cite: 34, 42]
-    * [cite_start]**Justification:** Bar and column charts are effective for comparing discrete categories, while line charts are ideal for showing temporal trends. [cite: 44, 45, 46] [cite_start]The combination provides a comprehensive view of overall trends and relative distribution. [cite: 48, 49, 50]
+1.  **Population Trend (Line and Stacked Column Chart):**
+    * **Purpose:** To visualize population trends (including urban population, rural population, and total population) over time using a line and stacked column chart to highlight the difference in population across the top 5 most populated countries and other countries (using filters).
+    * **Justification:** Bar and column charts are very useful for comparing values across discrete categories and subcategories, allowing quick interpretation due to distinct height and color differences. Line charts are ideal for showing temporal trends because humans can easily track the direction and steepness of a line. By combining them, the chart provides a comprehensive view: the line focuses on the overall trend in population, and the stacked column focuses on the relative distribution of population.
 
-2.  [cite_start]**Life Expectancy (Filled Map):** [cite: 37, 51]
-    * [cite_start]**Purpose:** To visualize average life expectancy rates across different countries using color intensity. [cite: 37, 52]
-    * [cite_start]**Justification:** Humans intuitively interpret maps. [cite: 54] [cite_start]Color intensity serves as a pre-attentive attribute, allowing quick understanding of differences in life expectancy rates. [cite: 55, 56, 57] [cite_start]Provides clear geographical insights with interactive tooltips for detailed information. [cite: 59, 60, 61]
+2.  **Life Expectancy (Filled Map):**
+    * **Purpose:** To visualize countries and analyze their life expectancy rate using color on a map interactively.
+    * **Justification:** Humans have a strong ability to process and interpret maps due to their alignment with mental models of geography. Color intensity is a pre-attentive characteristic, allowing users to quickly understand differences in life expectancy rates across different countries. The map uses spatial positioning and color coding to convey data quickly compared to tabular or textual data. It provides clear geographical insights, and interactive tooltips allow users to see detailed information without cluttering the map.
 
-3.  [cite_start]**Urban vs. Rural Population Growth (Stacked Area Chart):** [cite: 35, 62]
-    * [cite_start]**Purpose:** To compare urban and rural population trends over time and identify urbanization patterns. [cite: 35, 63, 69]
-    * [cite_start]**Justification:** Stacked area charts allow viewing multiple components within one view, highlighting individual trends and their contribution to the total over time, using different colors for clarity. [cite: 65, 66, 68, 70]
+3.  **Urban vs. Rural Population Growth (Stacked Area Chart):**
+    * **Purpose:** To compare urban and rural population growth using a stacked area chart to identify urbanization patterns across time (year).
+    * **Justification:** Stacked area charts allow viewing multiple components within one view while highlighting their individual trends over different categories or time. It uses different colors to split the area under the line by another categorical variable. From this chart, viewers can easily differentiate the trends in urban and rural populations.
 
-4.  [cite_start]**Natural Increase Rate (Card):** [cite: 38, 71]
-    * [cite_start]**Purpose:** To prominently display the average natural increase rate as a key performance indicator (KPI). [cite: 38, 72, 77]
-    * [cite_start]**Justification:** Cards minimize visual clutter and isolate a specific value, making it a focal point for the viewer. [cite: 74, 75]
+4.  **Natural Increase Rate (Card):**
+    * **Purpose:** To represent the average of the natural increase rate.
+    * **Justification:** A card minimizes visual clutter and visualizes a value without much effort. It isolates that specific value from the rest of the dashboard so that it becomes a main focal point for the viewer. The natural increase rate is an important indicator, which is why it is represented on a card.
 
-5.  [cite_start]**Birth Rate, Death Rate, and Population Growth (Line Chart):** [cite: 36, 78]
-    * [cite_start]**Purpose:** To plot trends of birth rate, annual population growth, and death rate over different periods. [cite: 36, 79]
-    * [cite_start]**Justification:** Multiple line charts are highly effective for comparing and showing trends of different variables over time, with distinct colors aiding recognition. [cite: 81, 82] [cite_start]This highlights critical patterns and provides actionable insights. [cite: 84]
+5.  **Birth Rate, Death Rate, and Population Growth (Line Chart):**
+    * **Purpose:** To plot a line chart for birth rate, annual population growth, and death rate at different periods of time (years) to identify how the quality of life and healthcare changes across different countries with the passage of time.
+    * **Justification:** Multiple line charts are used to compare data split out by another categorical variable and are highly effective for showing trends over time. Distinct colors for lines enable quick recognition and differentiation of trends. This chart helps to highlight critical patterns such as periods of high birth rates, death rates, or population growth, providing actionable insights for analyses.
 
 ### Dashboard Layout, Formatting, and Composition:
-* [cite_start]**Layout:** Utilizes a top-to-bottom and left-to-right hierarchy, prioritizing key insights (top 5 countries, life expectancy map) at the top. [cite: 87, 88] [cite_start]Deeper analytics (stacked area chart, line chart) are placed on the bottom left and right. [cite: 89] [cite_start]Interactive filters for Country Name and Year are included for dynamic exploration. [cite: 39, 90]
-* [cite_start]**Formatting:** Consistent color coding is used for clear segmentation (e.g., urban vs. rural populations, trend emphasis). [cite: 92, 93] [cite_start]All visuals feature clear titles, legends, and axes, with a consistent font and style throughout. [cite: 94, 95]
-* [cite_start]**Composition:** The dashboard effectively uses chart types suited for their purpose (bar for comparison, line for trends, stacked area for breakdown). [cite: 97] [cite_start]The prominent display of the "natural increase rate" KPI focuses on critical metrics, adhering to best practices. [cite: 98]
+* **Layout:** The dashboard uses a top-bottom and left-to-right hierarchy. Graphs for the top 5 countries and life expectancy from the map are on the top, prioritizing key insights. The stacked area chart and line chart provide deeper analytics and are located on the bottom left and bottom right. Interactive filters for country name and year are added, aligning with best practices for dynamic and interactive experiences.
+* **Formatting:** Color coding is used to differentiate between urban and rural populations in the area chart and to emphasize trends in the line chart for clear segmentation. Titles, legends, and axes are clearly labeled across all visuals, and consistent font and style are used throughout the dashboard.
+* **Composition:** The dashboard effectively uses chart types suited to their purpose, such as a bar chart for comparing, a line chart for trend visualization, and a stacked area chart for population breakdown. The prominent display of the KPI "natural increase rate" focuses on critical metrics, and all graphs adhere to best practices and theory.
 
 ### Dashboard Construction Steps (Power BI):
-1.  [cite_start]Open Power BI Desktop. [cite: 101]
-2.  [cite_start]Import data from Excel workbooks. [cite: 102, 103]
-3.  [cite_start]Transform data: [cite: 105]
-    * [cite_start]Remove blank rows from "Country Grouping" file. [cite: 106, 107]
-    * [cite_start]Replace null values in columns with "unclassified". [cite: 108]
-    * [cite_start]Replace header names if inappropriate. [cite: 109]
-    * [cite_start]Change the 'Time' column type from decimal to date type in the main file. [cite: 110]
-4.  [cite_start]Load data into Power BI. [cite: 111]
-5.  [cite_start]Establish relationships between tables (e.g., 'Time Code' between files, 'Country Code' for grouping). [cite: 112, 113]
-6.  Create new measures:
-    * [cite_start]**Total Population:** Sum of female and male populations. [cite: 114, 115, 116]
-    * [cite_start]**Natural Increase Rate:** Birth rate minus death rate. [cite: 117, 118]
-7.  Build Visualizations:
-    * **Line and Stacked Column Chart:** Drag to canvas, add 'Country Name' to X-axis, 'Sum of Urban Population', 'Sum of Rural Population', and 'Sum of Total Population' to Column Y-axis. Drag 'Average of Total Population' to Line Y-axis. Apply "Top N" filter for top 5 countries by 'Sum of Total Population'. [cite_start]Sort axis by 'Sum of Total Population'. [cite: 120, 121, 122, 123, 124, 125, 126]
-    * **Filled Map:** Drag to canvas, add 'Country Name' to 'Location'. Format fill colors using a gradient based on 'Average of Life expectancy at birth', setting minimum, center, and maximum colors. [cite_start]Add 'Average of Life expectancy at birth' to tooltips. [cite: 128, 129, 130, 131, 132, 133]
-    * [cite_start]**Stacked Area Chart:** Drag to canvas, add 'Time (Year)' to X-axis, and 'Average of Urban Population', 'Average of Rural Population' to Y-axis. [cite: 135, 136, 137]
-    * [cite_start]**Card:** Drag to canvas, select 'Natural Increase Rate'. [cite: 138, 139]
-    * **Multiple Line Chart:** Drag to canvas, add 'Time (Years)' to X-axis, 'Average of Death Rate' and 'Average of Birth Rate' to Y-axis. [cite_start]Add 'Average of Annual Population Growth' to secondary Y-axis. [cite: 140, 141, 142, 143]
+1.  Open Power BI Desktop.
+2.  In the Get data section of the home ribbon, select "Excel workbook."
+3.  Navigate to where the Excel files are saved.
+4.  Click "Transform data" to open Power Query Editor.
+5.  In Power Query Editor, remove blank rows from the "Country Grouping" file.
+6.  Replace null values in some columns with "unclassified."
+7.  Replace header names if they were not appropriate.
+8.  In the main file, change the 'Time' column's data type from decimal to date.
+9.  Load the data into Power BI.
+10. In the model section, create relationships between tables (e.g., between 'Time Code' in "Population Figures & Projections" and "Code (List of economies)").
+11. Create a new measure named "total population" by summing 'Population, female' and 'Population, male'.
+12. Create a new measure named "Natural Increase Rate" by calculating `SUM('Birth rate, crude (per 1,000 people)') - SUM('Death rate, crude (per 1,000 people)')`, applying `ALLEXCEPT` for 'Time'.
+13. **Visualization 1 (Line and Stacked Column Chart):**
+    * Drag the chart to the canvas.
+    * Drag 'Country Name' to the X-axis.
+    * Drag 'Sum of Urban population', 'Sum of Rural population', and 'Sum of Total population' to the Column Y-axis.
+    * Drag 'Average of total population' to the Line Y-axis.
+    * Apply a "Top N" filter to 'Country Name' to show the top 5 countries by 'Sum of total population'.
+    * Sort the axis by 'Sum of total population'.
+    * Rename column names and titles as needed.
+14. **Visualization 2 (Filled Map):**
+    * Drag the filled map to the canvas.
+    * Add 'Country Name' to the 'Location' field.
+    * Format fill colors using conditional formatting (Fx) with a gradient based on 'Average of Life expectancy at birth', setting minimum, middle, and maximum values and colors.
+    * Add 'Average of Life expectancy at birth' to the 'Tooltips' field.
+    * Name the visualization appropriately.
+15. **Visualization 3 (Stacked Area Chart):**
+    * Drag the stacked area chart to the canvas.
+    * Add 'Time (Year)' to the X-axis.
+    * Add 'Average of Urban population' and 'Average of Rural population' to the Y-axis.
+    * Rename the title and column names.
+16. **Visualization 4 (Card):**
+    * Drag the card visual to the canvas.
+    * Select 'Natural Increase Rate' from the data panel.
+    * Rename the title.
+17. **Visualization 5 (Multiple Line Chart):**
+    * Drag the multiple line chart to the canvas.
+    * Apply 'Time (Years)' to the X-axis.
+    * Add 'Average of Death rate' and 'Average of Birth rate' to the Y-axis.
+    * Add 'Average of Annual Population Growth' to the secondary Y-axis.
+    * Rename the title and column names.
 
 ### Critical Evaluation of the Dashboard:
-* [cite_start]**Strengths:** [cite: 146]
-    * [cite_start]Effectively visualizes population trends for top 5 countries. [cite: 147]
-    * [cite_start]Clearly represents trends in birth rate, death rate, and annual population growth. [cite: 148]
-    * [cite_start]Shows the distribution of urban and rural populations over time. [cite: 149]
-    * [cite_start]Provides geographical insights into life expectancy rates using a filled map. [cite: 150]
-    * [cite_start]Includes interactive filters for country and year, enhancing user exploration. [cite: 151]
-    * [cite_start]Prominently displays the natural increase rate as a key performance indicator. [cite: 152]
-* [cite_start]**Limitations:** [cite: 153]
-    * [cite_start]Lacks drill-down options for further detail. [cite: 154]
-    * [cite_start]Color patterns might not be fully accessible to color-blind users. [cite: 155]
+* **Strengths:**
+    * Effectively represents the population of the top 5 countries through a line and stacked column chart.
+    * Clearly shows different trends of birth rate, death rate, and annual population growth through a line chart.
+    * Represents the distribution of urban and rural population through a stacked area chart.
+    * Visualizes life expectancy with respect to each geographic location through a filled map chart.
+    * Provides filters for country and year, enabling users to get more specific information.
+    * Prominently displays the natural increase rate as a KPI in a card.
+* **Limitations:**
+    * The dashboard does not have drill-down options for more granular analysis.
+    * The color patterns used in this dashboard may not be fully accessible to color-blind users.
