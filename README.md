@@ -1,3 +1,4 @@
+<img width="471" height="253" alt="image" src="https://github.com/user-attachments/assets/151d17ad-10cb-4f07-a4d5-12fb6f49d375" />
 # Applied Statistics and Data Visualization Project: Global Population Dynamics
 
 ## Project Overview
